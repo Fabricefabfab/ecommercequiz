@@ -1,6 +1,6 @@
 <?php
 
-include 'conn.php';
+include './Model/conn.php';
 
 if(isset($_POST['done'])){
 
