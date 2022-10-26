@@ -7,7 +7,20 @@
 <button id="showData">displays the data</button>
 <div id="table-container"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="ajax-script.js"></script>
+<script type="text/javascript">
+   $(document).on('click','#showData',function(e){
+      $.ajax({    
+         type: "GET",
+         url: "backend-script.php",             
+         dataType: "html",                  
+         success: function(data){                    
+            $("#table-container").html(data); 
+            
+         }
+   });
+   });
+
+</script>
 
 <style>
    button {
