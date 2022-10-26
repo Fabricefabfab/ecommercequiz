@@ -1,7 +1,7 @@
 <?php
 
 define("servename","us-cdbr-east-06.cleardb.net");
-define("username","bb2644d05887cc");
-define("password","1855f1ec");
-define("db","heroku_25e4815c793ac8c");
+define("username","bedb62f2f3a0f9");
+define("password","222e3331");
+define("db","heroku_dfdc5cf28c06aa6");
 ?>
