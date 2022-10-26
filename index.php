@@ -12,9 +12,9 @@
       $.ajax({    
          type: "GET",
          url: "backend-script.php",             
-         dataType: "php",                  
+         dataType: "html",                  
          success: function(data){                    
-            $("#table-container").php(data); 
+            $("#table-container").html(data); 
             
          }
    });
