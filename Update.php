@@ -7,7 +7,7 @@
  $pid = $_GET['pid'];
  $pname = $_POST['pname'];
  $pphoned = $_POST['pphoned'];
- $q = " update Phonebook set pid=$pid, pname='$pname', pphoned='$pphoned' where pid=$pid  ";
+ $q = " update phonebook set pid=$pid, pname='$pname', pphoned='$pphoned' where pid=$pid  ";
 
  $query = mysqli_query($conn,$q);
 
@@ -46,7 +46,7 @@
  <input type="text" name="pphoned" class="form-control"> <br>
  <button class="btn btn-success" type="submit" name="done"> update</button><br>
 
- 
+
  </div>
  </form>
  </div>
