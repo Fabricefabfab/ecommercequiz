@@ -18,8 +18,13 @@
  <div class="container">
  <div class="col-lg-12">
  <br><br>
- <h1 class="text-warning text-center" > Displaying all data from Database</h1>
+ <h1 class="text-warning text-center" > A phonebook App</h1>
  <br>
+ <form method="get" action="insert.php">
+  <button class="btn btn-success" type="submit" name="done"> Add data</button>
+ </form>
+ <br>
+
  <table  id="tabledata" class=" table table-striped table-hover table-bordered">
  
  <tr class="bg-dark text-white text-center">
@@ -34,7 +39,7 @@
 
  <?php
 
- include 'conn.php'; 
+ include './Model/conn.php'; 
  $q = "select * from phonebook";
 
  $query = mysqli_query($conn,$q);
@@ -59,11 +64,6 @@
  </table>  
 
  </div>
- <br>
-
- <form method="get" action="insert.php">
-  <button class="btn btn-success" type="submit" name="done"> Add into database</button><br>
- </form>
  </div>
  
 

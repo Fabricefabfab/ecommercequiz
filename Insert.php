@@ -6,7 +6,7 @@ if(isset($_POST['done'])){
 
  $pname = $_POST['pname'];
  $pphoned = $_POST['pphoned'];
- $q = " INSERT INTO `Phonebook`(`pname`, `pphoned`) VALUES ( '$pname', '$pphoned' )";
+ $q = " INSERT INTO Phonebook(pname, pphoned) VALUES ( '$pname', '$pphoned' )";
 
  $query = mysqli_query($conn,$q);
  header('location:index.php');
@@ -37,10 +37,10 @@ if(isset($_POST['done'])){
  </div><br>
 
  <label> pname: </label>
- <input type="text" name="username" class="form-control"> <br>
+ <input type="text" name="pname" class="form-control"> <br>
 
  <label> pphoned: </label>
- <input type="text" name="password" class="form-control"> <br>
+ <input type="text" name="pphoned" class="form-control"> <br>
 
  <button class="btn btn-success" type="submit" name="done"> Add </button><br>
  </div>
