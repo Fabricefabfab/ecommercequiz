@@ -14,7 +14,7 @@
          url: "backend-script.php",             
          dataType: "php",                  
          success: function(data){                    
-            $("#table-container").html(data); 
+            $("#table-container").php(data); 
             
          }
    });
